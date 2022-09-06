@@ -1,0 +1,135 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+.container
+{
+    display: none;
+}
+#available
+{
+    display: none;
+}
+#items
+{
+    height: 60vh;
+    width: 50vw;
+    overflow: auto;
+    margin: 20px auto;
+    display: none;
+}
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #6c757d; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #6c757d; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover { 
+    background: gray;
+  }
+.item
+{
+    height: fit-content;
+}
+#slide
+{
+  position: fixed;
+  z-index: 9999;
+  right: -235px;
+  top: 100px;
+  width: 300px;
+  overflow: hidden;
+}
+#box-input
+{
+  background-color: white;
+  overflow: hidden;
+
+}
+.alert
+{
+    background-color: rgb(196, 0, 0);
+    color: white;
+}
+.dot {
+    height: 7px;
+    width: 7px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+}
+.Alert
+{
+    display: none;
+}
+#slide .icon
+{
+  float: left;
+  padding: 10px;
+  border-radius: 10% 0% 0% 10%;
+
+}
+#correct-name,#correct-cate,#correct-price,#wrong-name,#wrong-cate,#wrong-price
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    display: none;
+    
+}
+#correct-name,#correct-cate,#correct-price
+{
+    color: #50C878;
+}
+#wrong-name,#wrong-cate,#wrong-price
+{
+    color: 	rgb(196, 0, 0) ;
+}
+.input,textarea
+{
+    position: relative;
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #61adff;
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 3px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    font-size: 16px;
+}
+.radio-btns
+{
+  border-bottom: 2px dotted #61adff;
+}
+select
+{
+  background-color: transparent;
+  outline: none;
+  border-bottom: 2px solid #61adff;
+  display: none;
+}
+option
+{
+  background-color: #6c757d;
+  color: white;
+}
+#update
+{
+  display: none;
+}

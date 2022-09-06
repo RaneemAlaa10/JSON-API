@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>JSON</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/968335d1fa.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-dark">
+    <!--START OF SIDE FORM TO ADD OR UPDATE-->
+    <div id="slide">
+        <div id="toggle" class="icon bg-primary"><img src="icons8-google-forms-48.png" alt=""></div>
+        <div id="box-input" class="card bg-secondary p-3 text-light font-weight-bold">
+            <div class="radio-btns">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="operation" id="addNew" value="add">
+                    <label class="form-check-label" for="add" >
+                        Add
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="operation" id="updateOld" value="update">
+                    <label class="form-check-label" for="update">
+                        Update
+                    </label>
+                </div>
+            </div>
+            <select name="IDs" id="idSelect" class="my-2 text-light">  
+            </select>
+            <label for="title">Title</label>
+            <div class="input-container">
+                <input name="title" id="title" class="input">
+            </div>
+            <label for="body">Body</label>
+            <div class="input-container">
+                <textarea name="body" id="body" cols="30" rows="5"></textarea>
+            </div>
+            <button class="btn btn-warning my-2" id="update">Update</button>
+            <button id="add" class="btn btn-primary my-2" disabled>Add</button>
+        </div>
+    </div>
+    <!--END OF SIDE FORM TO ADD OR UPDATE-->
+    <div class="container text-center text-light p-3">
+        <h2>Posts <i class="fa-solid fa-blog"></i></h2>
+        <div id="available"></div>
+        <button id="displayBtn" class="btn btn-light">Display All posts</button>
+        <div class="btns mt-3">
+            <button id="reset" class="btn btn-secondary">Reset</button>
+        </div>
+    </div>
+    <div id="items" class="items row">
+
+    </div>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
